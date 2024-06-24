@@ -1,0 +1,21 @@
+<script>
+function fun()
+{
+r=document.getElementById("ran");
+i=document.getElementById("image");
+i.setAttribute("width",r.value);
+i.setAttribute("height",r.value);
+}
+</script>
+<style>
+div{
+position:absolute; top:100px; left:400px;
+}
+</style>
+<body>
+<div>
+<img src="e4.png" id="image" height="100px" width="100px"/>
+<br><br><br><br><br>
+<input type="range" min="100" max="500" id="ran" onchange="fun()" style="width:300px"></input>
+</div>
+</body>
